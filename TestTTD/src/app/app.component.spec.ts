@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have the 'TestTTD' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('TestTTD');
+    expect(app.title).toEqual('Unit Testing Angular App');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, TestTTD');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Unit Testing Angular App');
   });
 });
